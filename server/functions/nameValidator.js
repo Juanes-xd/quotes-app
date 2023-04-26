@@ -1,5 +1,5 @@
 // Function to validate and store a name without special characters
-const validateAndStoreName = (name) => {
+export const validateAndStoreName = (name) => {
     if (!name) {
       throw new Error('Name is required');
     }
@@ -16,5 +16,3 @@ const validateAndStoreName = (name) => {
   
     return storedName;
   };
-  
-module.exports = validateAndStoreName;

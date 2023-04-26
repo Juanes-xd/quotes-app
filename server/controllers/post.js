@@ -1,5 +1,5 @@
 import Quote from "../models/quote.js";
-// import { validateAndStoreName } from "../functions/nameValidator.js";
+import { validateAndStoreName } from "../functions/nameValidator.js";
 
 export const addQuote = async (req, res) => {
   try {

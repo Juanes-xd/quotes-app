@@ -1,4 +1,5 @@
-const validateAndStoreName = require('../functions/nameValidator.js');
+// const validateAndStoreName = require('../functions/nameValidator.js');
+import { validateAndStoreName } from "../functions/nameValidator";
 
 describe('validateAndStoreName', () => {
   it('should store a name without special characters', () => {
