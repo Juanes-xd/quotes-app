@@ -1,0 +1,23 @@
+.quote-card {
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    padding: 50px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .25);
+    border-radius: 20px;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.quote-card-author {
+    font-family: var(--font-cardo);
+    font-size: 24px;
+    width: 200px;
+}
+
+.quote-card-quote {
+    font-family: var(--font-quicksand);
+    font-size: 18px;
+    font-weight: 500;
+    flex: 1;
+}

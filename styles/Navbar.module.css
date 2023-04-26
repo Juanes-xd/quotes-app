@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  padding: 0 50px;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+}
+
+.links {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #121212;
+  font-family: var(--font-cardo);
+  font-weight: 700;
+  transition: .3s all ease-in-out;
+}
+
+.link:hover {
+  color: #f05454;
+}
