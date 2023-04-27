@@ -18,7 +18,7 @@ export const addQuote = async (req, res) => {
     const quoteSaved = await Quote.find();
     res.redirect("http://localhost:3000/all-quotes")
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.redirect(`http://localhost:3000/add-quote/error/${err}`)
   }
 };
 

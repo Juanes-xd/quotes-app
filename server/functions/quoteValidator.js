@@ -16,7 +16,7 @@ export const validateAndStoreQuote = (quote) => {
   const specialChars = /[@#$^*{}|<>]/g;
 
   if (specialChars.test(quote)) {
-    throw new Error("Quote cannot contain @#$^*{}|<>");
+    throw new Error("Quote cannot contain special characters");
   }
 
   // Store the Quote
