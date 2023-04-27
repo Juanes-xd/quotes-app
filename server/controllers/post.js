@@ -1,15 +1,17 @@
 import Quote from "../models/quote.js";
 import { validateAndStoreName } from "../functions/nameValidator.js";
+import { validateAndStoreQuote } from "../functions/quoteValidator.js";
 
 export const addQuote = async (req, res) => {
   try {
     const { author, quote } = req.body;
 
     const authorVerified = validateAndStoreName(author);
+    const quoteVerified = validateAndStoreQuote(quote)
 
     const newQuote = new Quote({
       author: authorVerified,
-      quote,
+      quote: quoteVerified,
     });
 
     await newQuote.save();
